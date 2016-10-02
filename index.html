@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS cơ bản phần 3</title>
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style:none;
+		}
+		.wrap {
+
+			display:inline-block;
+			position: fixed;
+			min-width:1024px;
+			width:100%;
+			max-height:40px;
+			background:#333;
+			font-size:16px;
+			
+		}
+			
+		.wrap img {
+			display :inline-block;
+			
+			width :40px;
+			height:40px;
+			margin-left:200px;
+			float:left;
+			
+		}
+
+		
+		.wrap img:hover {
+			opacity: .65;
+		}
+
+		nav {
+			display:inline-block;
+			width :auto;
+			height:40px;
+			position: absolute;
+			margin-left: 20px;
+				
+		}
+
+		.wrap li {
+			width :auto;
+			height:38px;
+			text-align:center;
+			display: inline-block;
+			margin:10px 10px 0px 50px;
+			color:white;
+			background: no-repeat;
+			 font: 15px arial, sans-serif;
+    		font-weight: inherit;
+    		line-height: inherit;
+			position: relative;
+		}
+
+		b:hover {
+			border-bottom:2px solid white;
+			padding:0 0 10px 0;
+   			 text-decoration: none;
+   			 opacity: .65;
+		
+		}
+
+		.content {
+			min-width:1024px;
+			width:100%;
+			max-height:auto;
+			font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+			display:inline-block;
+			background:black;
+		}
+		.content img {
+			width:auto;
+			height:auto ;
+			display:block;
+			margin-bottom:-4px;
+			
+		}
+		.content-text {
+			font-size:15px;
+			width:30%;
+			height:auto;
+			margin:80px 820px;
+			position: absolute;
+			color:white;
+			border:2px solid white;
+			padding:10px 20px 15px 15px;
+		}
+		h1 {
+			text-align:center;
+			padding:10px 0;
+		}
+		
+	</style>
+
+<body>
+
+	<header>
+		<div class="wrap">
+			<img class="logo" src="apple.svg" alt="">
+			<nav>
+				<ul>
+					<li><b>MAC</b></li>
+					<li><b>IPAD</b></li>
+					<li><b>IPHONE</b></li>
+					<li><b>WATCH</b></li>
+					<li><b>TV</b></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="content-text">
+			<h1>IPHONE 7</h1>
+			<p>iPhone 7 dramatically improves the most important aspects of the iPhone experience. It introduces advanced new camera systems. The best performance and battery life ever in an iPhone. Immersive stereo speakers. The brightest, most colorful iPhone display. Splash and water resistance.1 And it looks every bit as powerful as it is. This is iPhone 7.</p>
+		</div>
+
+		<img src="iphone7.jpg">
+		<img style="width:100%" src="iphone-7-2.jpg">
+	</div>
+	
+</body>
+</html>
